@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Перевод температуры из градусов цельсия в Реомюра: " + celsiusToReaumur.convert(temperatureCelsius));
 
         System.out.println("""
-                                
+                --------------------------------------------------------------------------------------------------------                
                 Вторая задача:
                 """);
         Box box = new Box(199);
