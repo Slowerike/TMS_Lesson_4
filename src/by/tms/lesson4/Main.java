@@ -25,21 +25,21 @@ public class Main {
                 Вторая задача:
                 """);
         Box box = new Box(199);
-        System.out.println(box);
+        System.out.println(box+"\n");
 
         Ball ball = new Ball(3);
         System.out.println(ball);
-        System.out.println("Можно добавить фигуру %s,да/нет? - ".formatted(ball.getClass().getSimpleName()) +
-                (box.add(ball) ? "да" : "нет") + "\n");
+        System.out.println("Можно добавить фигуру %s в коробку? - ".formatted(ball.getClass().getSimpleName()) +
+                (box.add(ball) ? "Можно" : "Нельзя") + "\n");
 
         Cylinder cylinder = new Cylinder(2, 5);
         System.out.println(cylinder);
-        System.out.println("Можно добавить фигуру %s,да/нет? - ".formatted(cylinder.getClass().getSimpleName()) +
-                (box.add(cylinder) ? "да" : "нет") + "\n");
+        System.out.println("Можно добавить фигуру %s в коробку? - ".formatted(cylinder.getClass().getSimpleName()) +
+                (box.add(cylinder) ? "Можно" : "Нельзя") + "\n");
 
         Pyramid pyramid = new Pyramid(20, 30);
         System.out.println(pyramid);
-        System.out.println("Можно добавить фигуру %s,да/нет? - ".formatted(pyramid.getClass().getSimpleName()) +
-                (box.add(pyramid) ? "да" : "нет") + "\n");
+        System.out.println("Можно добавить фигуру %s в коробку? - ".formatted(pyramid.getClass().getSimpleName()) +
+                (box.add(pyramid) ? "Можно" : "Нельзя") + "\n");
     }
 }

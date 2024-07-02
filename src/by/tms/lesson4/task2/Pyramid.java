@@ -12,11 +12,11 @@ public class Pyramid extends Shape {
 
     @Override
     public String toString() {
-        return "Пирамида{" +
+        return "Пирамида [" +
                 "Площадь-" + getS() +
                 ",Высота-" + getH() +
                 ",Объём-" + (int) this.getVolume() +
-                '}';
+                ']';
     }
 
     public double getS() {

@@ -12,7 +12,7 @@ public class Box extends Shape {
 
     @Override
     public String toString() {
-        return "Коробка{Объём-" + (int) this.getVolume() + "}";
+        return "Коробка [Объём-" + (int) this.getVolume() + "]";
     }
 
 }
