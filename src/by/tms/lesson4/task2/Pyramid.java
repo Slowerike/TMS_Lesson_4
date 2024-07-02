@@ -9,4 +9,21 @@ public class Pyramid extends Shape {
         this.s = s;
         this.h = h;
     }
+
+    @Override
+    public String toString() {
+        return "Пирамида{" +
+                "Площадь-" + getS() +
+                ",Высота-" + getH() +
+                ",Объём-" + (int) this.getVolume() +
+                '}';
+    }
+
+    public double getS() {
+        return s;
+    }
+
+    public double getH() {
+        return h;
+    }
 }
