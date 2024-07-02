@@ -1,10 +1,11 @@
 package by.tms.lesson4.task2;
 
 public class SolidOfRevolution extends Shape {
-    double radius;
+    private double radius;
 
-    public SolidOfRevolution(double radius) {
-        this.radius = radius;
+    public SolidOfRevolution(double radius, double volume) {
+        super(volume);
+        this.radius = getRadius();
     }
 
     public double getRadius() {

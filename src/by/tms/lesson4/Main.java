@@ -23,12 +23,15 @@ public class Main {
                                 
                 Вторая задача:
                 """);
-        Box box = new Box(1000);
+        Box box = new Box(199);
+
         Ball ball = new Ball(3);
-        Cylinder cylinder = new Cylinder(2, 5);
-        Pyramid pyramid = new Pyramid(20, 30);
         System.out.println("Можно добавить фигуру %s,да/нет?-".formatted(ball.getClass().getSimpleName()) + box.add(ball));
+
+        Cylinder cylinder = new Cylinder(2, 5);
         System.out.println("Можно добавить фигуру %s,да/нет?-".formatted(cylinder.getClass().getSimpleName()) + box.add(cylinder));
+
+        Pyramid pyramid = new Pyramid(20, 30);
         System.out.println("Можно добавить фигуру %s,да/нет?-".formatted(pyramid.getClass().getSimpleName()) + box.add(pyramid));
     }
 }

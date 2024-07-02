@@ -1,12 +1,11 @@
 package by.tms.lesson4.task2;
 
 public class Cylinder extends SolidOfRevolution {
-    public double height;
+    private double height;
 
     public Cylinder(double radius, double height) {
-        super(radius);
+        super(radius,  Math.PI * Math.pow(radius, 2) * height);
         this.height = height;
-        volume = Math.PI * Math.pow(radius, 2) * height;
     }
 
 }
